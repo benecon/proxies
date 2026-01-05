@@ -2,7 +2,7 @@ name: Sync master and copy rules to main
 
 on:
   schedule:
-    - cron: "0 2 * * *" # Daily at 02:00 UTC
+    - cron: "*/5 * * * *" #"0 2 * * *" # Daily at 02:00 UTC
   workflow_dispatch:
 
 jobs:
