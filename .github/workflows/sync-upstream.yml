@@ -1,0 +1,24 @@
+name: Sync fork with upstream
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Runs daily at 02:00 UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Sync upstream
+        uses: repo-sync/github-sync@v2
+        with:
+          source_repo: https://github.com/Centralmatrix3/Matrix-io.git
+          source_branch: master
+          destination_branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
