@@ -9,4 +9,10 @@ DOMAIN,valid.apple.com,DIRECT
 DOMAIN,ocsp.apple.com,DIRECT
 DOMAIN,api.devicecheck.apple.com,DIRECT
 DOMAIN-SUFFIX,devicecheck.apple.com,DIRECT
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,aaplimg.com,DIRECT
+DOMAIN-SUFFIX,akadns.net,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
 DOMAIN-SUFFIX,17.0.0.0/8,DIRECT
