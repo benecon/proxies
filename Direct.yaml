@@ -1,0 +1,7 @@
+DOMAIN,time.apple.com,DIRECT
+DOMAIN,time-ios.apple.com,DIRECT
+DOMAIN-SUFFIX,devicecheck.apple.com,DIRECT
+DOMAIN,api.devicecheck.apple.com,DIRECT
+DOMAIN,valid.apple.com,DIRECT
+DOMAIN,ocsp.apple.com,DIRECT
+IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
